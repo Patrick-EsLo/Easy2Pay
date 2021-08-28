@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SQLiteAgenda.Vistas.V_Registro">
+    <ContentPage.Content>
+        <StackLayout Margin="5"
+                     BackgroundColor="LightBlue">
+            <Label Text="Product Registration"
+                   HorizontalOptions="CenterAndExpand"
+                   BackgroundColor="WhiteSmoke"/>
+            <Entry Placeholder="Insert a product name"
+                   x:Name="txtName"/>
+            <Entry Placeholder="Insert a barcode"
+                   Keyboard="Text"
+                   x:Name="txtBarcode"/>
+            <Entry Placeholder="Insert the product cost"
+                   x:Name="txtCost"/>
+            <Button Text="ADD"
+                    x:Name="btnAdd"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
